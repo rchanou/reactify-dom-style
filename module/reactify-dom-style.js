@@ -18,4 +18,4 @@ var reactifyDomStyle = function(node){
 
 };
 
-export default reactifyDomStyle;
+module.exports = reactifyDomStyle;
