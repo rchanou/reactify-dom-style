@@ -11,7 +11,7 @@ var module = {
 };
 
 var config = {
-  entry: './src/demo/main.jsx',
+  entry: './demo/src/main.jsx',
   output: {
     filename: './demo/main.js'
   },

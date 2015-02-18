@@ -1,5 +1,5 @@
 import React from 'react';
-import reactifyDomStyle from '../module/reactify-dom-style';
+import reactifyDomStyle from '../../module/reactify-dom-style';
 
 class Demo extends React.Component {
 
