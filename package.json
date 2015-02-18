@@ -1,0 +1,19 @@
+{
+  "name": "movable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.13.0-beta.1"
+  },
+  "devDependencies": {
+    "6to5-core": "^3.6.4",
+    "6to5-loader": "^3.0.0",
+    "webpack": "^1.5.3"
+  }
+}
