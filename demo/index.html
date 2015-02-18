@@ -7,15 +7,46 @@
         font-family: sans-serif;
       }
 
+      div {
+        height: 3em;
+      }
+
+      @-webkit-keyframes webkitflashingStroke {
+        from {
+          background-color: hsl(180,50%,50%);
+        }
+        50% {
+          background-color: hsl(360,50%,50%);
+        }
+        to {
+          background-color: hsl(180,50%,50%);
+        }
+      }
+
+      @keyframes flashingStroke {
+        from {
+          background-color: hsl(180,50%,50%);
+        }
+        50% {
+          background-color: hsl(360,50%,50%);
+        }
+        to {
+          background-color: hsl(180,50%,50%);
+        }
+      }
+
       #source {
-        -webkit-transition: all 1s ease-out;
-        transition: all ease-out 1s;
-        background-color: red;
+        -webkit-animation-name: webkitflashingStroke;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: flashingStroke;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
       }
     </style>
   </head>
   <body>
-    <div id='source'>I am a regular DOM node whose color is changing through CSS animations.</div>
+    <div id='source'>I am a regular DOM node with styles set through CSS.</div>
     <div id='main'></div>
     <script src='main.js'></script>
   </body>
