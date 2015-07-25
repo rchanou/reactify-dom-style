@@ -9,19 +9,19 @@ src/module/reactify-dom-style.js file and paste it into your code.
 
 Example usage in a React render function:
 
-var reactifyDOMStyle = require('reactify-dom-style');
+    var reactifyDOMStyle = require('reactify-dom-style');
 
-...
+    ...
 
-render(){
-  var sourceStyle = reactifyDOMStyle(document.getElementById('someNodeId'));
+    render(){
+      var sourceStyle = reactifyDOMStyle(document.getElementById('someNodeId'));
 
-  return <div style={sourceStyle}>
-    I'm in the style of the other DOM node.
-  </div>;
-}
+      return <div style={sourceStyle}>
+        I'm in the style of the other DOM node.
+      </div>;
+    }
 
-...
+    ...
 
 
 
@@ -30,9 +30,9 @@ To build the JS for demo/index.html, run the following commands in this project'
 
 Initial Install:
 
-'npm install'
+    npm install
 
 
 Activate Auto-Build:
 
-'node build'
+    node build
